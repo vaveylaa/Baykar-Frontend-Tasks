@@ -1,0 +1,242 @@
+body {
+  font-family: "Space Grotesk", sans-serif;
+  background-color: #020971;
+  background: url("https://cdnik.baykartech.com/static/assets/media/bg_kizilelma.png") center/cover no-repeat,
+    linear-gradient(120deg, #020971 0%, rgb(173, 196, 207) 100%);
+  height: 100vh;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.next-button {
+  font-family: "Space Grotesk", sans-serif;
+}
+
+.hidden {
+  display: none;
+}
+
+.last-seconds {
+  color: rgb(164, 16, 16);
+}
+
+.container {
+  width: 100%;
+  max-width: 600px;
+  margin: auto;
+  text-align: center;
+  display: none;
+}
+
+.card {
+  background-color: #ecedf0;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  padding: 20px;
+  border-radius: 8px;
+  transform: translateY(100%) translateX(0);
+  animation: slideUp 1s ease-out forwards;
+}
+
+.question {
+  font-size: 1.2em;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.options {
+  list-style: none;
+  padding: 0;
+  text-align: left;
+}
+
+.option {
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.option:hover {
+  background-color: #eaeaea;
+}
+
+.option.selected {
+  background-color: #c0d6df;
+}
+
+.timer {
+  font-size: 1.2em;
+  color: #0c1a3f;
+  margin-bottom: 20px;
+  margin: auto;
+  display: block;
+}
+
+.timer.last-seconds {
+  color: #ff0000;
+  animation: pulse 1s infinite;
+}
+
+.header {
+  margin-top: 1.5em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.timer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 30px;
+  padding: 1em 1.5em;
+  background-color: #f9f9f9;
+}
+
+.next-button {
+  background-color: #669bbc;
+  color: #fff;
+  border: none;
+  padding: 10px 100px;
+  font-size: 1em;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-top: 20px;
+  margin: auto;
+  display: block;
+}
+
+.next-button:hover {
+  background-color: #457b9d;
+}
+
+#result-table {
+  width: 95%;
+  max-width: 1200px;
+  max-height: 500px;
+  overflow: auto;
+
+  margin: 80px auto;
+  border-collapse: collapse;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#result-table th {
+  background-color: #669bbc;
+  color: #dfe1e5;
+  font-weight: bold;
+  padding: 15px;
+}
+
+#result-table td {
+  padding: 15px;
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+}
+
+.progress-bar {
+  position: absolute;
+  top: 10px;
+  bottom: 10px;
+  left: 10px;
+  right: 10px;
+  height: 15px;
+  background-color: #033f7e;
+  border-radius: 10px;
+  transition: width 0.5s ease-out;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.loading-container {
+  width: 100px;
+  height: 100px;
+  border-radius: 100%;
+  background: linear-gradient(165deg,
+      rgba(255, 255, 255, 1) 0%,
+      rgb(220, 220, 220) 40%,
+      rgb(170, 170, 170) 98%,
+      rgb(10, 10, 10) 100%);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation: fadeOut 4s forwards;
+}
+
+.loader:before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  border-radius: 100%;
+  border-bottom: 0 solid #ffffff05;
+
+  box-shadow: 0 -10px 20px 20px #ffffff40 inset,
+    0 -5px 15px 10px #ffffff50 inset, 0 -2px 5px #ffffff80 inset,
+    0 -3px 2px #ffffffbb inset, 0 2px 0px #ffffff, 0 2px 3px #ffffff,
+    0 5px 5px #ffffff90, 0 10px 15px #ffffff60, 0 10px 20px 20px #ffffff40;
+  filter: blur(3px);
+  animation: 2s rotate linear infinite;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(100%) translateX(0);
+  }
+
+  to {
+    transform: translateY(0) translateX(0);
+  }
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.2);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes rotate {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes fadeOut {
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
+}

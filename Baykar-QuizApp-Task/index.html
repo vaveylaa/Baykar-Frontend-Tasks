@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Quiz App</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@700&display=swap" rel="stylesheet"><link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="loading-container">
+    <div class="loader"></div>
+  </div>
+
+<div class="container">
+  <div class="card" id="quiz">
+    
+    <div class="header">
+      <div id="question-counter"></div>
+      <div class="timer-container">
+        <div class="timer" id="timer"></div>
+      </div>
+    </div>
+    <hr /> 
+    <div class="card" id="quiz">
+      <div class="question" id="question"></div>
+      <ul class="options" id="options"></ul>
+      <button class="next-button" id="next-button">Next</button>
+    </div>
+    
+  </div>
+
+  <div class="card hidden" id="result-table">
+    <table>
+      <thead>
+        <tr>
+          <th>Question</th>
+          <th>Answer</th>
+        </tr>
+      </thead>
+      <tbody id="result-body">
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<script src="quiz.js"></script>
+</body>
+</html>
