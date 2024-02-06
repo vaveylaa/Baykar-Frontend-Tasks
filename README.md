@@ -1,16 +1,16 @@
 # Proje Adı
 
-Proje Açıklaması: [Projenizin kısa açıklamasını buraya ekleyin]
+Proje Açıklaması: Figma to -->  HTML/CSS/Bootstrap   Website Template
 
 ## Dosya Yapısı
 
 - **index.html**: Ana HTML dosyası.
 - **style.css**: Stil dosyası.
-- **assets/**: İçeriğe ait görseller ve simgelerin bulunduğu klasör.
+- **assets**: İçeriğe ait görseller ve simgelerin bulunduğu klasör.
 
 ## Kullanım
 
-Projenizi çalıştırmak için aşağıdaki adımları takip edebilirsiniz.
+Projeyi çalıştırmak için aşağıdaki adımları takip edebilirsiniz.
 
 1. `index.html` dosyasını bir tarayıcıda açarak web sayfasını görüntüleyebilirsiniz.
 
