@@ -1,0 +1,231 @@
+*body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.navbar .container-fluid {
+    padding: 0em 38px;
+
+}
+
+.navbar .container-fluid .navbar-brand {
+    color: #78350F;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 110%;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+.navbar .container-fluid .collapse .navbar-nav .nav-item .nav-link {
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    padding: 1em;
+    color: #78350F;
+}
+
+.navbar .container-fluid .collapse .navbar-nav .nav-item .btn {
+    height: 100%;
+    border-radius: 12px;
+    border: 2.5px solid var(--amber-900, #78350F);
+    color: #78350F;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.5rem;
+    letter-spacing: 0.03125rem;
+}
+
+.figure .figure-img {
+    top: 10px;
+    left: 100px;
+}
+
+.nav-item .btn-outline {
+    padding: 10px 20px;
+    margin: 0 10px;
+}
+
+#signup-button {
+    border: 2px solid #78350F;
+    border-radius: 8px;
+    color: #78350F;
+}
+
+#section1 {
+    font-family: 'Roboto', sans-serif;
+    padding-top: 50px;
+    background-color: #FFFBEB;
+}
+
+#header {
+    background-color: #FFFBEB;
+}
+
+#section1 {
+    position: relative;
+    overflow: hidden;
+
+}
+
+.triangle {
+    width: 2rem;
+    height: 10rem;
+    border-left: 1500px solid transparent;
+    border-top: 25px solid transparent;
+    border-right: 0rem solid #FEF3C7;
+    border-bottom: 33rem solid #FEF3C7;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+
+}
+
+.image-content {
+    position: relative;
+    width: 19rem;
+    height: 19.5rem;
+    gap: 0.625rem;
+    flex-shrink: 0;
+    border-radius: 3.125rem;
+    margin-left: 40%;
+}
+
+.col-md-4 {
+    z-index: 2;
+}
+
+.image-content .figure {
+    position: absolute;
+    bottom: 2.19rem;
+    flex-shrink: 0;
+    max-width: 33.375rem;
+    height: 100%;
+}
+
+.image-content .figure img {
+    height: 100%;
+    flex-shrink: 0;
+}
+
+#card-button1,
+#card-button2,
+#card-button3 {
+    -webkit-text-fill-color: #FFFFFF;
+    border: 2px solid white;
+    text-size-adjust: bold;
+}
+
+.card {
+    -webkit-text-fill-color: #FFFFFF;
+}
+
+.carousel-inner .carousel-item>.d-flex {
+    margin: 0 -15px;
+}
+
+.carousel-inner .carousel-item .card {
+    flex: 0 0 33.333%;
+    margin: 0 15px;
+}
+
+.album {
+    position: relative;
+    overflow: hidden;
+}
+
+.album::before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-image: url("assets/Backlightsmobile.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    transform: rotate(270deg);
+}
+
+.list-group-item {
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    background-color: transparent !important;
+    border: none !important;
+}
+
+.list-group-item.active {
+    border-radius: 10px;
+    color: #0F172A !important;
+    background-color: white !important;
+    box-shadow: -1px 4px 3px -3px rgba(0, 0, 0, 0.75);
+}
+
+.panel-heading {
+    color: #fff !important;
+    padding: 25px;
+    border-bottom: 1px solid transparent;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+
+.ellips {
+    background-image: url(assets/world.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+
+
+}
+
+.waves {
+    background-image: url(assets/Waves.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.ellipse-button {
+    background: transparent;
+    border: none;
+}
+
+.maps {
+    font-size: 40px;
+    font-weight: 500;
+    color: #ffffff;
+}
+
+.bg-amber {
+    background-color: #78350F !important;
+}
+
+#growcollec {
+    padding-bottom: -8rem !important;
+}
+
+@media screen and (max-width: 1500px) {
+    #tabs-photo {
+        width: 50rem;
+        height: 50rem;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    #tabs-photo {
+        width: 30rem;
+        height: 30rem;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    #tabs-photo {
+        width: 20rem;
+        height: 20rem;
+        top: 20rem;
+    }
+}
