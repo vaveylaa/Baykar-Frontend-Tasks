@@ -1,12 +1,13 @@
-# Proje Adı
+# Baykar-CSS-Task
 
-Proje Açıklaması: Figma to -->  HTML/CSS/Bootstrap   Website Template
+Proje Açıklaması: Figma to -->  HTML/CSS/Bootstrap   Website Template  
 
 ## Dosya Yapısı
 
 - **index.html**: Ana HTML dosyası.
 - **style.css**: Stil dosyası.
-- **assets**: İçeriğe ait görseller ve simgelerin bulunduğu klasör.
+- **assets**: İçeriğe ait svg ve simgelerin bulunduğu klasör.
+- **img**: İçeriğe ait görsellerin bulunduğu klasör.
 
 ## Kullanım
 
