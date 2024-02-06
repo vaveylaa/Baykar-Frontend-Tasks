@@ -1,7 +1,12 @@
 # Baykar-CSS-Task
 
-Proje Açıklaması: Figma to -->  HTML/CSS/Bootstrap   Website Template  
+Proje Açıklaması: Figma to -->  HTML/CSS/Bootstrap        Website  --->  https://baykar-css-task.netlify.app/
 
+
+# Baykar-QuizApp-Task
+
+Proje Açıklaması: JS ile 10 sorudan oluşan bir quiz test app çalışması   Website  --->  [baykar-css-task.netlify.app](https://baykar-quiz-app.netlify.app/)
+ 
 ## Dosya Yapısı
 
 - **index.html**: Ana HTML dosyası.
